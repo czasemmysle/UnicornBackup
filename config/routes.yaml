@@ -2,8 +2,3 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-proba: 
-     path: /proba
-     controller: App\Controller\ProbaController::index
-     defaults: 
-          template: 'proba.html.twig'
