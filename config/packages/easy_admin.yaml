@@ -1,6 +1,42 @@
 easy_admin:
+
+    design:
+        brand_color: 'gray'
+
+    user:
+        display_name: false
+        display_avatar: false
+
+    site_name: 'Backup<i>System</i>'
     entities:
-        # List the entity class name you want to manage
-        - App\Entity\Backup
-        - App\Entity\Plan
-        - App\Entity\VM
+        Backup:
+            class: App\Entity\Backup
+            label: 'Backup'
+            list:
+                actions:
+                    - { name: 'edit', icon: 'pencil', label: 'Edytuj' }
+                    - { name: 'delete', icon: 'trash', label: 'Usuń' }
+                    - { name: 'new', icon: '', label: 'Dodaj backup' }
+                title: 'Lista backupów'
+                help: 'Lista backupów dla konkretnych maszyn wirtualnych' 
+        Plan:
+            class: App\Entity\Plan
+            label: 'Zaplanowane backupy'
+            list:
+                actions:
+                    - { name: 'edit', icon: 'pencil', label: 'Edytuj' }
+                    - { name: 'delete', icon: 'trash', label: 'Usuń' }
+                    - { name: 'new', icon: '', label: 'Dodaj plan' }
+                title: 'Lista planów wykonywania backupów'
+                help: null
+                
+        VM: 
+            class: App\Entity\VM
+            label: 'Maszyny wirtualne'
+            list:
+                actions:
+                    - { name: 'edit', icon: 'pencil', label: 'Edytuj' }
+                    - { name: 'delete', icon: 'trash', label: 'Usuń' }
+                    - { name: 'new', icon: '', label: 'Dodaj maszynę' }
+                title: 'Lista maszyn'
+                help: null

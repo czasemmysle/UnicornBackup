@@ -78,6 +78,12 @@ class Plan
      */
     private $backups;
 
+    public function __toString()
+    {
+    return (string)$this->id;
+    }
+
+
     public function __construct()
     {
         $this->backups = new ArrayCollection();
