@@ -1,0 +1,13 @@
+{
+    "filesBackupLogFilePath": "path",
+    "databaseBackupLogFilePath": "path",
+    "virtualBackupLogFilePath": "path",
+    "networkAdress": "192.168.1.0",
+    "dbLogin": "UnicornBackup",
+    "dbPassword": "UnicornBackup!123",
+    "dbName": "Backup_hashcode",
+    "localUsername": "UnicornBackup",
+    "localPassword": "UnicornBackup!123"
+    "scriptDir": "/home/UnicornBackup/skrytpy";
+    "defaultDir": "/home/UnicornBackup";
+}
